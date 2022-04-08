@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "9039b025-151a-4d83-80cf-aa4a45fd6145",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sleepy-bayou-90727.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"sleepy-bayou-90727",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sleepy-bayou-90727.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"sleepy-bayou-90727",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sleepy-bayou-90727.herokuapp.com/todos/53ae1197-e46e-4de3-ac8b-6aabd7c0ed71",
+					"protocol": "https",
+					"host": [
+						"sleepy-bayou-90727",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"53ae1197-e46e-4de3-ac8b-6aabd7c0ed71"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sleepy-bayou-90727.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"sleepy-bayou-90727",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新單筆資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"今天要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sleepy-bayou-90727.herokuapp.com/todos/03f9e3a3-b1d7-481c-8740-18907e9b7b46",
+					"protocol": "https",
+					"host": [
+						"sleepy-bayou-90727",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"03f9e3a3-b1d7-481c-8740-18907e9b7b46"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
